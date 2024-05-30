@@ -7,75 +7,70 @@
 
 ## Introduction
 
-This project covers the installation and configuration process of LAMP stack collection process. This LAMP stack is comprised of four programs - Linux, Apache, MySQL and PHP, used to create and deploy a functional database application. 
+This project aims to automate tasks related to managing Linux servers deployed by Azure Virtual Machines (VMs) using Ansible. We’ll integrate VMware components and leverage the power of Ansible playbooks to streamline VM provisioning, configuration, and maintenance.
 
-### Components used to complete this project:
+### Components used:
 
-- Linux Centos Stream 9
-- Apache
-- MySQL
-- PHP
-- VMware
+    Azure Virtual Machines: Our target infrastructure for deploying and managing VMs.
+    VMware: We’ll use VMware tools to enhance VM performance, security, and scalability.
+    Ansible: Our automation engine for orchestrating tasks across VMs.
+    PPA (Personal Package Archive): A repository for additional software packages.
 
-## Start Section 1
+## Project Steps
+### 1. Install PPA Repository
 
-We begin this project with.... 
+First, let’s set up the PPA repository:
 
-I then created inbound rules to ...
+![installing ppa](https://imgur.com/xn7vUhr.jpg) 
 
-![---](.jpg) 
+### 2. System Update and Install Ansible
 
-![---](.jpg) 
+ We will complete this step running the following commands
+  # 
+  
+    Update the system
+    sudo apt update
 
-## Successful Restore Confirmation
-I was able to remote into the machine and confirm the restore machine duplication was successful.
+    Install Ansible
+    sudo apt install ansible
 
-![---](.jpg) 
 
-I ran into complications when assigning a public...
+![installing ansible](https://imgur.com/UlNQS8Q.jpg) 
 
-![---](.jpg) 
+### 3. Clone Ansible Playbook
 
-![---](.jpg) 
+Next, clone the Ansible playbook repository and generate an SSH key pair:
 
-From here I was able to configure a...
+![clone pb](https://imgur.com/0I00N2y.jpg) 
 
-![---](.jpg) 
+### 4. Generate SSH Key Pair
 
-The IP address configuration was complete...
-![---](.jpg) 
+![keygen](https://imgur.com/UD7cs84.jpg) 
 
-I then created inbound rules to ...
+### 5. Share Public Key with Node(s)
 
-![---](.jpg) 
+Copy the public key to the target node(s). For this project we created 1 node.
 
-![---](.jpg)  
+![copy key](https://imgur.com/6b7MXOs.jpg) 
 
-## Successful Restore Confirmation
-I was able to remote into the machine and confirm the restore machine duplication was successful.
+Verify that the public key is copied successfully:
 
-![---](.jpg)  
+![check public key](https://imgur.com/myrzhbY.jpg) 
 
-I ran into complications when assigning a public...
+### 6. Modify Inventory and Playbook
 
-![---](.jpg) 
+Update the playbook `playbook.yml` to define tasks for your project and edit the inventory file `inventory.yml` to include node server details: 
 
-![---](.jpg) 
+![inv mod](https://imgur.com/eIdvUYj.jpg) 
 
-From here I was able to configure a...
+![inv mod2](https://imgur.com/pP53UvQ.jpg) 
 
-![---](.jpg) 
+### 7. Run the Playbook
 
-The IP address configuration was complete...
-![---](.jpg) 
+Execute the playbook to automate your desired tasks using command `ansible-playbook -i inventory.ini playbook.yml`:
 
-I then created inbound rules to ...
-
-![---](.jpg) 
-
-![---](.jpg) 
+![autom test](https://imgur.com/18EVv4r.jpg)  
 
 ## Conclusion
-In this project, I was able to successfully configure and complete a full cloud-native backup service and machine restore to 100% data availability in Azure. Both methods prove to be powerful on-premises data protection solutions, useful in events of service disruptions, accidental deletions or corruption of data. It's equally secure, scalable, and cost-effective as it is simple to architect, highly available, and resilient.
 
-## fin
+By following these steps, we were able to enhance our Linux server(s) using Ansible and VMware components. The benefit to using Ansible is we can customize our playbooks further based on project requirements.
