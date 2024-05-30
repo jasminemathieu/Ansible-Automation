@@ -21,7 +21,7 @@ This project aims to automate tasks related to managing Linux servers deployed b
 
 First, let’s set up the PPA repository:
 
-![installing ppa](https://imgur.com/xn7vUhr.jpg) 
+![installing ppa](https://imgur.com/W4Xxo2h.jpg) 
 
 ### 2. System Update and Install Ansible
 
@@ -35,41 +35,41 @@ First, let’s set up the PPA repository:
     sudo apt install ansible
 
 
-![installing ansible](https://imgur.com/UlNQS8Q.jpg) 
+![installing ansible](https://imgur.com/hNG3F4z.jpg) 
 
 ### 3. Clone Ansible Playbook
 
 Next, clone the Ansible playbook repository and generate an SSH key pair:
 
-![clone pb](https://imgur.com/0I00N2y.jpg) 
+![clone pb](https://imgur.com/PbML0P5.jpg) 
 
 ### 4. Generate SSH Key Pair
 
-![keygen](https://imgur.com/UD7cs84.jpg) 
+![keygen](https://imgur.com/MPjs9Bp.jpg) 
 
 ### 5. Share Public Key with Node(s)
 
 Copy the public key to the target node(s). For this project we created 1 node.
 
-![copy key](https://imgur.com/6b7MXOs.jpg) 
+![copy key](https://imgur.com/T31l6c7.jpg) 
 
 Verify that the public key is copied successfully:
 
-![check public key](https://imgur.com/myrzhbY.jpg) 
+![check public key](https://imgur.com/uhwiwXm.jpg) 
 
 ### 6. Modify Inventory and Playbook
 
 Update the playbook `playbook.yml` to define tasks for your project and edit the inventory file `inventory.yml` to include node server details: 
 
-![inv mod](https://imgur.com/eIdvUYj.jpg) 
+![inv mod](https://imgur.com/qogTyaH.jpg) 
 
-![inv mod2](https://imgur.com/pP53UvQ.jpg) 
+![inv mod2](https://imgur.com/Z9bDzEP.jpg) 
 
 ### 7. Run the Playbook
 
 Execute the playbook to automate your desired tasks using command `ansible-playbook -i inventory.ini playbook.yml`:
 
-![autom test](https://imgur.com/18EVv4r.jpg)  
+![autom test](https://imgur.com/nlpbPdK.jpg)  
 
 ## Conclusion
 
