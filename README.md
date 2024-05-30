@@ -11,7 +11,7 @@ This project aims to automate tasks related to managing Linux servers deployed b
 
 ### Components used:
 
-    Azure Virtual Machines: Our target infrastructure for deploying and managing VMs.
+    Azure Virtual Machines: Our target infrastructure for deploying and managing Linux servers / VMs.
     VMware: We’ll use VMware tools to enhance VM performance, security, and scalability.
     Ansible: Our automation engine for orchestrating tasks across VMs.
     PPA (Personal Package Archive): A repository for additional software packages.
