@@ -43,11 +43,11 @@ Next, clone the Ansible playbook repository and generate an SSH key pair:
 
 ![clone pb](https://imgur.com/PbML0P5.jpg) 
 
-### 4. Generate SSH Key Pair
+Here, we verify that the pair key has been created as reflected below.
 
 ![keygen](https://imgur.com/MPjs9Bp.jpg) 
 
-### 5. Share Public Key with Node(s)
+### 4. Share Public Key with Node(s)
 
 Copy the public key to the target node(s). For this project we created 1 node.
 
@@ -57,7 +57,7 @@ Verify that the public key is copied successfully:
 
 ![check public key](https://imgur.com/uhwiwXm.jpg) 
 
-### 6. Modify Inventory and Playbook
+### 5. Modify Inventory and Playbook
 
 Update the playbook `playbook.yml` to define tasks for your project and edit the inventory file `inventory.yml` to include node server details: 
 
@@ -65,7 +65,7 @@ Update the playbook `playbook.yml` to define tasks for your project and edit the
 
 ![inv mod2](https://imgur.com/Z9bDzEP.jpg) 
 
-### 7. Run the Playbook
+### 6. Run the Playbook
 
 Execute the playbook to automate your desired tasks using command `ansible-playbook -i inventory.yml playbook.yml`:
 
