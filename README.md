@@ -23,7 +23,7 @@ First, let’s set up the PPA repository:
 
 ![installing ppa](https://imgur.com/W4Xxo2h.jpg) 
 
-### 2. System Update and Install Ansible
+### 2. Update System and Install Ansible
 
  We will complete this step running the following commands:
   # 
