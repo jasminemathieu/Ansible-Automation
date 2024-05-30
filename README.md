@@ -25,7 +25,7 @@ First, let’s set up the PPA repository:
 
 ### 2. System Update and Install Ansible
 
- We will complete this step running the following commands
+ We will complete this step running the following commands:
   # 
   
     Update the system
@@ -67,7 +67,7 @@ Update the playbook `playbook.yml` to define tasks for your project and edit the
 
 ### 7. Run the Playbook
 
-Execute the playbook to automate your desired tasks using command `ansible-playbook -i inventory.ini playbook.yml`:
+Execute the playbook to automate your desired tasks using command `ansible-playbook -i inventory.yml playbook.yml`:
 
 ![autom test](https://imgur.com/nlpbPdK.jpg)  
 
