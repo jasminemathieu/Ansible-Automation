@@ -59,7 +59,7 @@ Verify that the public key is copied successfully:
 
 ### 5. Modify Inventory and Playbook
 
-Update the playbook `playbook.yml` to define tasks for your project and edit the inventory file `inventory.yml` to include node server details: 
+Next, we will update the playbook `playbook.yml` to define tasks for our project and edit the inventory file `inventory.yml` to include node server details: 
 
 ![inv mod](https://imgur.com/qogTyaH.jpg) 
 
@@ -67,7 +67,7 @@ Update the playbook `playbook.yml` to define tasks for your project and edit the
 
 ### 6. Run the Playbook
 
-Execute the playbook to automate your desired tasks using command `ansible-playbook -i inventory.yml playbook.yml`:
+Execute the playbook to automate our desired tasks using command `ansible-playbook -i inventory.yml playbook.yml`:
 
 ![autom test](https://imgur.com/nlpbPdK.jpg)  
 
