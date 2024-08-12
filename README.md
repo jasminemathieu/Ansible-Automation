@@ -1,4 +1,4 @@
-# Ansible Automation
+# Automating Linux Server Management on Azure VMs with Ansible
 
 ![ansible proj](https://imgur.com/rYtasJC.jpg) 
 
