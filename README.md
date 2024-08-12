@@ -1,9 +1,6 @@
 # Ansible Automation
 
-<div align="center">
-  <img src="https://imgur.com/2IR1Jcq.jpg" height="120" alt="linux logo"  />
-  <img width="36" />
-</div>
+![ansible proj](https://imgur.com/rYtasJC.jpg) 
 
 ## Introduction
 
